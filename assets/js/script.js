@@ -9,6 +9,7 @@ const createCells = function () {
     numbers.appendChild(cell)
   }
 }
+createCells()
 
 const numberExtraction = function () {
   const result = document.getElementById("result")
@@ -18,8 +19,8 @@ const numberExtraction = function () {
 }
 const highlight = function () {
   for (i = 0; i < 76; i++) {
-    if (extraction === i + 1) {
-      const cell = document.querySelector("main div")
+    if (numberExtraction() === i + 1) {
+      const cell = document.querySelectorAll("main div")[i]
       cell.classList.add("selected")
     }
   }
@@ -39,7 +40,3 @@ const playerCells = function (e) {
     numbers.appendChild(cell)
   }
 }
-
-createCells()
-
-highlight()
