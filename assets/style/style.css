@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+span {
+  display: block;
+  text-align: center;
+}
+body {
+  background-color: bisque;
+}
+.borders {
+  border: 2px solid black;
+  display: inline-block;
+  padding: 1em;
+  background-color: white;
+}
+.selected {
+  background-color: yellow;
+}
+.players {
+  border: 2px solid gray;
+  display: inline-block;
+  padding: 1em;
+  margin: 0.5em;
+}

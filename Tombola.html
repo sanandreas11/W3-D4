@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Play Tombolla</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tombolla</h1>
+    </header>
+    <main id="numberList">
+      <button onclick="numberExtraction()">Estrazione del numero</button
+      ><span id="result">Schiaccia il bottone per iniziare</span>
+      <!--qua ci andrà la carta-->
+    </main>
+    <form id="playerList">
+      <label for="players">Quanti giocatori siete?</label>
+      <select name="players" id="players">
+        <option class="values" value="1">1</option>
+        <option class="values" value="2">2</option>
+        <option class="values" value="3">3</option>
+        <option class="values" value="4">4</option>
+      </select>
+      <button onclick="playerCells()">Conferma</button>
+      <!-- qua ci andrà la carta del giocatore -->
+    </form>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
